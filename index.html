@@ -587,20 +587,82 @@ Actively seeking entry-level roles in Embedded Systems, Industrial Electronics, 
 <button class="read-more-btn">Read More</button>
 </div>
   <div class="project-card">
-<h3>Obstacle Detection and Alert System</h3> 
-<p class="short-description">A microcontroller-based system designed to detect nearby obstacles using an ultrasonic sensor and provide real-time visual and audio alerts. The project demonstrates embedded C programming, sensor interfacing, and real-time distance measurement using the PIC18F4550 microcontroller.</p>
+<h3>Transistor-MOSFET Based IR Object Detection and Dual Alert System</h3>
+<p class="short-description">
+A hardware-based IR object detection and alert system designed using transistor and MOSFET switching techniques for real-time object detection without using a microcontroller.
+</p>
 <div class="project-details">
 <h4>Problem & Solution:</h4>
-<p>In many applications such as robotics, industrial automation, and assistive systems, undetected obstacles can cause collisions, equipment damage, or safety hazards. This project addresses the need for reliable short-range obstacle detection by using a microcontroller-based system that continuously monitors the surroundings and provides immediate alerts when an obstacle is detected, improving operational safety and response time.</p>
+<p>
+In applications such as security systems, automation, and industrial monitoring, undetected objects or intrusions can lead to safety risks and delayed response. Many existing object detection systems rely on microcontrollers and software-based processing, increasing system complexity, cost, and power consumption. This project addresses these issues by developing a hardware-based IR object detection and dual alert system without using a microcontroller. The system detects object presence using an IR sensor and provides immediate visual and audio alerts through an LED and buzzer, ensuring fast response and reliable operation.
+</p>
 <h4>Technologies Used:</h4>
 <ul>
-<li><strong>Microcontroller:</strong> PIC18F4550</li>
-<li><strong>Sensors:</strong> Ultrasonic sensor</li>
-<li><strong>Output Devices:</strong> LEDs, Buzzer</li> 
-<li><strong>Programming:</strong> Embedded C using MPLAB X IDE with XC8 compiler</li>
+<li><strong>Sensor:</strong> IR proximity sensor</li>
+<li><strong>Switching Devices:</strong> BC547 transistor, IRFZ44N MOSFET</li>
+<li><strong>Output Devices:</strong> LED, buzzer</li>
+<li><strong>Simulation Software:</strong> Proteus Professional 8</li>
+<li><strong>Implementation:</strong> Hardware-based electronic circuit design without microcontroller</li>
 </ul>
 <h4>My Role & Contribution:</h4>
-<p>I designed and implemented the obstacle detection system using the PIC18F4550 microcontroller, interfacing the ultrasonic sensor to measure distance based on echo timing. I developed the embedded C firmware to process sensor data and trigger visual and audio alerts when an obstacle was detected within a predefined range. I was responsible for circuit assembly, pin configuration, firmware testing, debugging, and validating system performance to ensure accurate and reliable obstacle detection.</p>
+<p>
+I designed and implemented the IR-based object detection and alert system using discrete electronic components. I interfaced the IR sensor with the BC547 transistor for signal inversion and used the IRFZ44N MOSFET as a low-side switching device to control the LED and buzzer outputs. I was responsible for circuit design, component selection, Proteus simulation, hardware assembly on PCB, testing, debugging, and validating system performance to ensure stable and reliable object detection with fast response time.
+</p>
+</div>
+<button class="read-more-btn">Read More</button>
+</div>
+  <div class="project-card">
+<h3>Smart Electric Fence System for Security and Intrusion Detection</h3>
+<p class="short-description">
+A smart security and intrusion detection system using ESP32, PIR, vibration, and voltage sensors with GSM-based real-time alert functionality for perimeter protection.
+</p>
+<div class="project-details">
+<h4>Problem & Solution:</h4>
+<p>
+Traditional electric fence systems act only as passive barriers and do not provide real-time intrusion alerts or fence integrity monitoring. In remote agricultural and industrial areas, fence wire cutting, grounding, or tampering may go undetected, leading to security breaches and delayed response. This project addresses these limitations by developing a smart electric fence system that continuously monitors intrusion events using multiple sensors and provides immediate local and remote alerts through GSM communication, improving perimeter security and system reliability.
+</p>
+<h4>Technologies Used:</h4>
+<ul>
+<li><strong>Microcontroller:</strong> ESP32 WROOM-32D</li>
+<li><strong>Sensors:</strong> PIR motion sensor, SW-420 vibration sensor, voltage sensing circuit</li>
+<li><strong>Communication Module:</strong> SIM800L GSM module</li>
+<li><strong>Output Devices:</strong> LED indicators, active buzzer</li>
+<li><strong>Power System:</strong> Solar panel, PWM charge controller, 12V battery</li>
+<li><strong>Programming:</strong> Embedded C using Arduino IDE</li>
+<li><strong>Simulation Software:</strong> Proteus 8 Professional</li>
+</ul>
+<h4>My Role & Contribution:</h4>
+<p>
+I designed and implemented the smart electric fence system using the ESP32 microcontroller, integrating PIR, vibration, and voltage sensors for intrusion and fence fault detection. I developed the embedded firmware to process multi-sensor inputs, implement sensor fusion logic, and trigger local alerts and GSM-based SMS notifications during intrusion events. I was responsible for circuit design, sensor interfacing, GSM module communication, power supply integration, Proteus simulation, hardware assembly, firmware testing, debugging, and validating system performance under different environmental conditions to ensure reliable and accurate intrusion detection.
+</p>
+</div>
+<button class="read-more-btn">Read More</button>
+</div>
+  <div class="project-card">
+<h3>Smart Traffic Signal Simulation</h3>
+<p class="short-description">
+A real-time smart traffic signal simulation developed using Linux System Programming concepts in C, demonstrating process management, IPC, multithreading, synchronization, and dynamic traffic control at a four-way junction.
+</p>
+<div class="project-details">
+<h4>Problem & Solution:</h4>
+<p>
+Traditional traffic systems use fixed signal timing, which leads to inefficient traffic flow, unnecessary waiting time, and congestion during peak traffic conditions. This project addresses these limitations by developing a smart traffic signal simulation that dynamically allocates the GREEN signal to the lane with the highest traffic density. The system continuously monitors traffic conditions, detects congestion, and generates alerts in real time, improving traffic management efficiency and reducing traffic bottlenecks.
+</p>
+<h4>Technologies Used:</h4>
+<ul>
+<li><strong>Programming Language:</strong> C Programming</li>
+<li><strong>Concepts:</strong> Linux System Programming</li>
+<li><strong>Multithreading:</strong> POSIX Threads (pthreads)</li>
+<li><strong>IPC Mechanisms:</strong> FIFO Pipes, Message Queues</li>
+<li><strong>Synchronization:</strong> Mutexes, Condition Variables</li>
+<li><strong>Signal Handling:</strong> SIGINT, SIGUSR1</li>
+<li><strong>File Handling:</strong> File I/O system calls for logging</li>
+<li><strong>Platform:</strong> Linux Environment</li>
+</ul>
+<h4>My Role & Contribution:</h4>
+<p>
+I designed and implemented the smart traffic signal simulation using Linux System Programming concepts in C. I developed the traffic controller and vehicle generator processes, implemented FIFO pipe-based inter-process communication, and used message queues for congestion alert handling. I created multithreaded asynchronous logging using POSIX threads with mutex and condition variable synchronization to ensure thread-safe operation. I also implemented dynamic traffic signal allocation logic, congestion detection mechanisms, signal handling for graceful shutdown, and persistent traffic logging to simulate a reliable real-time traffic management system.
+</p>
 </div>
 <button class="read-more-btn">Read More</button>
 </div>
